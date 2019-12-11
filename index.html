@@ -9,6 +9,15 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "da534f1b-969c-4fb3-bcbc-b5931c0f9234",
+        host: "https://wchat.freshchat.com"
+      });
+    }
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+  </script>
 <link rel="stylesheet" href="styles.260e92c1f6275cfb35d6.css"></head>
 <body>
   <app-root></app-root>
